@@ -29,17 +29,55 @@ p {
   padding: 23px;
 }
 
-/* Use your variables on elements along these lines */
-/*
-:root {
-  --contrast: lime;
-  --backgr: #000;
+/* styles til navigation */
+/*sticky navigation*/
+nav {
+  position: sticky;
+  top: 0;
+  background-color:rgb(63, 106, 63);
+
 }
 
---- You can use the variables like this ---
+/*Gør logoet mindre*/
+nav a img {
+  height: 90px;
+  width: auto;
+}
+nav a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 2rem;
+  display: inline-block;
+  font-family: sans-serif;
+}
 
- main {
-   color: var(--contrast);
-   background-color: var(--backgr);
- }
-*/
+h1{
+  font-size: 8rem;
+  text-align: center;
+  color: rgb(23, 58, 27);
+  text-font: sans-serif;
+}
+h2{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--tekst);
+  text-font: sans-serif;
+}
+
+
+
+
+/* farvepalette*/
+:root{
+  --tekst : rgb(250, 250, 250);
+  --baggrund : rgb(90, 130, 79);
+  --nav : rgb(63, 106, 63);
+  --kontrast : rgb(178, 242, 183);
+  --kontrast: rgb(146, 144, 182);
+}
+
+
+.flexdemo{
+  display: flex;
+}
